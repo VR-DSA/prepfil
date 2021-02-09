@@ -11,12 +11,16 @@ All operations are done on the timescale of a gulp. Important variables to edit 
 
 Edit the makefile (paying particular attention to the CUDA version and the compute architecture of the GPU). Add other include paths if needed.
 
-### The help output
+### To run
 
 process [options]
- -f input filename
- -o output filename
- -b baselined output filename
- -d send debug messages to syslog
- -t flagging threshold [default 5.0]
- -h print usage
+ -  -f input filename [no default - essential]
+ -  -o output filename [no default - essential]
+ -  -b baselined output filename [optional]
+ -  -d send debug messages to syslog 
+ -  -t flagging threshold [default 5.0]
+ -  -h print usage
+ 
+ ### Outputs
+ 
+ Will always output a file prior to baselining, and optionally a file after baselining. 
